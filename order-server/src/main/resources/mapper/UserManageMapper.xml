@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.order.mapper.OrderMapper">
+
+    <insert id="insertOrderData"  useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT INTO insuranceservice.t_temp_order(id,order_no,goods_id,user_id,data_state,date_flag,modify_time,make_time)
+        VALUES (#{id}, #{orderNo}, #{goodsId}, #{userId}, #{dataState}, #{dateFlag}, #{modifyTime}, #{makeTime});
+    </insert>
+</mapper>

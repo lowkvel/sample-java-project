@@ -1,0 +1,15 @@
+server:
+  port: 8188
+  servlet:
+    context-path: /order-server
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.16.21.20:3306/insuranceservice?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: zfb
+    password: zfbdb
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
+  type-aliases-package:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
